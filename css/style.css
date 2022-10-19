@@ -1,0 +1,317 @@
+
+/* font-family: 'Raleway', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap');
+
+:root {
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    margin: 0;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(23, 27, 27);
+    margin: auto;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: inherit;
+    font-weight: 900;
+    padding-bottom: 1%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 600;
+    padding-bottom: .5%;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: 600;
+    padding-bottom: .25%;
+}
+
+p {
+    padding-bottom: .5%;
+}
+
+header {
+    background-color: rgb(23, 27, 27);
+    color: white;
+}
+
+#about {
+    background-color: rgb(171, 145, 111);
+}
+
+#help {
+    background-color: aqua;
+}
+
+#services {
+    background-color: rgb(165, 153, 190);
+}
+
+#contact {
+    background-color: salmon;
+}
+
+#techu {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: rgb(23, 27, 27);
+    color: white;
+}
+
+footer a {
+    color: yellow;
+}
+
+/* mobile model starts here */
+
+@media screen and (min-width: 300px) {
+    
+    .logo {
+        background-color: rgb(23, 27, 27);
+        width: 88vw;
+        max-height: 30vh;
+        padding: 1rem 1rem 1rem .5rem;
+        margin: auto;
+    }
+
+    .section-photos {
+        width: 12rem;
+        float: left;
+        padding: 3%; 
+    }
+
+    header {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    header p {
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        text-align: left;
+    }
+
+    header a:hover {
+        background-color: rgb(144, 176, 176);
+    }
+
+    header nav {
+        margin: 0%;
+        padding: 0;
+    }
+
+    header a{
+        display: block;
+        padding: 1rem;
+        border: 2px solid white;
+        color: blue;
+        background-color: rgb(206, 206, 206);
+        font-weight: 900;
+        font-size: 1.2rem;
+        text-decoration: none;
+        margin-bottom: 1rem;
+    }
+
+    .imgcontainer {
+        overflow: hidden;
+        max-height: 35vh;
+        margin-bottom: 2rem;
+        vertical-align: bottom;
+        border: 5px solid black;
+        border-radius: 2%;
+    }
+
+    .headingimg {
+        vertical-align: bottom;
+        height: auto;
+        width: 100%;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    h2, h3, h4 {
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        padding: 1%;
+        font-weight: 900;
+        text-decoration: underline;
+        
+    }
+
+    main ul {
+        display: inline-block;
+        list-style: inside;
+        padding: 1rem;
+    }
+    
+    main ul li {
+        padding-bottom: 1rem;
+        line-height: .8rem;
+    }
+
+    section>p:first-child{
+        font-weight: 800;
+    }
+
+    #services article {
+        border: 2px solid black;
+        margin-top: 1rem;
+        padding-left: 2rem;
+    }
+
+    .ajdust-weight {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: rgb(50, 50, 50);
+    }
+
+    #services a {
+            font-weight: 600;
+            font-size: 1.3rem;
+            padding: 1%;
+            background-color: white;
+            border-radius: 15%;
+            text-decoration: none;
+            border: 2px solid black;
+        }
+
+    #about, #help, #services, #contact, #techu{
+        background-color: rgb(144, 176, 176);
+        padding: 1%;
+        margin-bottom: 2rem;
+        border-radius: 2%;
+    }
+
+    #about p, #help p, #services p, #contact p, #techu p {
+        padding: 2%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        padding: 1rem;
+        font-size: .8rem;
+    }
+
+    footer p:first-child {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+}
+
+
+/* teblet model starts here */
+
+@media screen and (min-width: 800px) {
+
+    .logo {
+        max-height: 35vh;
+        width: 85vw;
+        
+    }
+
+    header {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    header p {
+        text-align: center;
+    }
+
+    header ul {
+        position: relative; 
+        right: -1.1%;
+
+    }
+
+    header ul li{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    header a{
+        display: inline-block;
+        padding: 1rem;
+        border: 2px solid white;
+        border-radius: 45%;
+        font-size: 2rem;
+    }
+
+    .flexcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        gap: 3rem;
+    }
+
+    .columnone {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 50%;
+    }
+
+    .columntwo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        width: 50%;
+    }
+
+}
+
+
+/* desktop model starts here */
+
+@media screen and (min-width: 1900px) {
+
+    .logo {
+        max-height: 35vh;
+        width: 95vw;
+        
+    }
+
+    header a{
+        display: inline-block;
+        padding: 1rem;
+        border: 2px solid white;
+        border-radius: 0;
+        margin-bottom: .5rem;
+        margin-right: .5rem;
+        font-size: 1.2rem;
+    }
+    
+    header ul {
+        position: relative; 
+        right: -.4%;
+
+    }
+    main {
+        max-width: 65%;
+        margin: auto;
+    }
+
+}
